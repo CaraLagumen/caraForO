@@ -1,27 +1,35 @@
-# Uwu
+## Development
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
+Run `ng serve` in **master folder**.
 
-## Development server
+### Output
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+1. **pepperoni** 6335
+2. **four cheese** 1611
+3. **mozzarella cheese** 1461
+4. **bacon** 1447
+5. **beef** 1140
+6. **sausage** 831
+7. **mushrooms** 733
+8. **italian sausage** 672
+9. **black olives** 456
+10. **chicken** 401
+11. **pineapple** 360
+12. **ham** 341
+13. **jalapenos** 258
+14. **green peppers** 206
+15. **canadian bacon** 174
+16. **diced white onions** 168
+17. **cheddar cheese** 154
+18. **diced tomatoes** 128
+19. **alredo sauce** 127
+20. **onions** 121
+21. **sliced breaded chicken breast** 64
+22. **artichokes** 55
+23. **anchovies** 42
+24. **feta cheese** 32
+25. **garlic basil oil** 28
+26. **giant pepperoni** 24
+27. **parmesan parsley** 18
+28. **sliced roma tomatoes** 16
+29. **carmelized red onion** 15

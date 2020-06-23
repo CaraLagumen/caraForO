@@ -1,0 +1,99 @@
+<div class="stats">
+
+  <h1 class="stats__title">uwu Pizza</h1>
+
+  <div
+    *ngIf="isLoaded"
+    class="stats__top20"
+  >
+
+    <h2 class="stats__top20--heading">Top 20 Ordered Pizza Toppings</h2>
+
+    <div class="stats__top20--names">
+      <h3 class="stats__top20--names-rank">Rank</h3>
+      <h3 class="stats__top20--names-name">Topping name</h3>
+      <h3 class="stats__top20--names-ordered">Total ordered</h3>
+    </div>
+
+    <div
+      *ngFor="let toppingsCount of (sortedAllToppingsCount | slice:0:20); let i = index;"
+      class="stats__top20--items"
+    >
+      <span class="stats__top20--items-rank">{{ i + 1 }}</span>
+      <span class="stats__top20--items-name">{{ toppingsCount[0] }}</span>
+      <span class="stats__top20--items-ordered">{{ toppingsCount[1] }}</span>
+    </div>
+
+  </div>
+
+  <button
+    (click)="onShowMore()"
+    *ngIf="!showMore"
+  >Show more</button>
+
+  <div
+    *ngIf="showMore"
+    class="stats__top30"
+  >
+
+    <div
+      *ngFor="let toppingsCount of (sortedAllToppingsCount | slice:21:30); let i = index;"
+      class="stats__top30--items"
+    >
+      <span class="stats__top30--items-rank">{{ i + 21 }}</span>
+      <span class="stats__top30--items-name">{{ toppingsCount[0] }}</span>
+      <span class="stats__top30--items-ordered">{{ toppingsCount[1] }}</span>
+    </div>
+
+  </div>
+
+  <h2 class="stats__heading">All Ordered Pizza Toppings</h2>
+
+  <button
+    (click)="onShowAllOrdered()"
+    *ngIf="!showAllOrdered"
+  >Show all ordered</button>
+
+  <div
+    *ngIf="showAllOrdered"
+    class="stats__names"
+  >
+    <h3 class="stats__names-number">Order number</h3>
+    <h3 class="stats__names-name">Topping name</h3>
+  </div>
+
+  <div
+    *ngIf="showAllOrdered"
+    class="stats__all-ordered-toppings"
+  >
+
+    <div
+      *ngFor="let toppings of (allToppings | slice:start:end); let i = index;"
+      class="stats__all-ordered-toppings--items"
+    >
+
+      <span class="stats__all-ordered-toppings--items-number">{{ start + i + 1 }}</span>
+      <app-stats-toppings
+        [toppings]="toppings"
+        class="stats__all-ordered-toppings--items-name"
+      ></app-stats-toppings>
+
+    </div>
+
+  </div>
+
+  <div
+    *ngIf="showAllOrdered"
+    class="stats__pagination"
+  >
+    <button
+      *ngIf="start >= 100"
+      (click)="onBackward()"
+    >◄</button>
+    <button
+      *ngIf="end <= allToppings.length"
+      (click)="onForward()"
+    >►</button>
+  </div>
+
+</div>

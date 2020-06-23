@@ -1,0 +1,20 @@
+.app {
+  display: grid;
+  grid-template-rows: min-content;
+
+  &__main {
+    align-self: center;
+    justify-self: center;
+
+    height: 100%;
+    width: 100%;
+  }
+
+  h3 {
+    padding: 2rem;
+
+    background-color: var(--color-black);
+
+    text-align: end;
+  }
+}

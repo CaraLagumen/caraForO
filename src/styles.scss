@@ -1,1 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=Italiana:500|Open+Sans:400,700&display=swap");
+
+@import "sass/abstracts/variables";
+
+@import "sass/base/base";
+@import "sass/base/typography";
